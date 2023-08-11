@@ -76,6 +76,6 @@ class EmployeeController extends Controller
             ->with('error', 'Error, This employee does not exist.');
         else return redirect()
             ->route('employee.index')
-            ->with('success', 'Employee, edited successfully.');
+            ->with('success', 'Employee, deleted successfully.');
     }
 }
